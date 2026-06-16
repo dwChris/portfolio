@@ -77,8 +77,9 @@ This repository is a portfolio that highlights the major AI and automation proje
 ## Projects
 
 ### 1. LangChain + OpenSearch based LLM chatbot
+### 1. LangGraph + LangChain + OpenSearch based LLM chatbot | with Monitor by LangFuse
 
-GitHub: https://github.com/dwChris/LangChain-OpenSearch-Extention
+GitHub: https://github.com/dwChris/LangGraph-LangChain-LangFuse-OpenSearch-Extention
 
 This is a FastAPI chat and RAG project that combines LangChain, the Hugging Face Inference API, and OpenSearch. It supports local attachment storage, vector search, and optional external search integration. The default model is `Qwen2.5-7B-Instruct`.
 
