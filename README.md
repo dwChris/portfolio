@@ -7,19 +7,19 @@
 
 ## Projects
 
-### 1. LangChain + OpenSearch 기반 LLM 챗봇
+### 1. LangGraph + LangChain + OpenSearch 기반 LLM 챗봇 및 LangFuse를 통한 모니터링
 
-GitHub: https://github.com/dwChris/LangChain-OpenSearch-Extention
+GitHub: https://github.com/dwChris/LangGraph-LangChain-LangFuse-OpenSearch-Extention
 
-OpenSearch 기반 RAG와 LangChain을 결합한 FastAPI 챗봇 프로젝트입니다. Hugging Face API를 통해 `Qwen2.5-7B-Instruct` 모델을 사용하고, 외부 검색 결과나 업로드 파일을 함께 활용할 수 있도록 설계했습니다.
+LangGraph, LangChain, Hugging Face Inference API, OpenSearch를 결합한 FastAPI 채팅 및 RAG 프로젝트입니다. 로컬 파일 첨부 저장과 벡터 검색을 지원하고, 필요할 때 외부 검색 API를 함께 사용할 수 있도록 구성했습니다. 기본 모델은 `Qwen2.5-7B-Instruct`입니다.
 
 주요 포인트:
 
-- FastAPI 기반 REST API와 간단한 웹 UI 제공
-- LangChain을 활용한 모델 오케스트레이션
-- Hugging Face API 연동 및 모델 교체 지원
-- OpenSearch 기반 벡터 검색과 첨부파일 검색 지원
-- Docker Compose로 `app`, `minio`, `opensearch`를 함께 실행 가능
+- FastAPI 기반 REST API와 브라우저 UI, CLI 클라이언트 제공
+- `POST /chat`과 `POST /chat/stream`으로 일반 응답과 SSE 스트리밍 지원
+- 업로드 파일을 `/files` API로 저장, 조회, 삭제하고 RAG 검색에 활용 가능
+- LangChain 기반 프롬프트 오케스트레이션과 Hugging Face 모델 교체 지원
+- Docker Compose로 앱, MinIO, OpenSearch, LangFuse를 함께 실행 가능
 
 ### 2. Whisper 기반 STT 회의록 작성 및 업무 시스템 연계
 
@@ -77,15 +77,15 @@ This repository is a portfolio that highlights the major AI and automation proje
 
 GitHub: https://github.com/dwChris/LangChain-OpenSearch-Extention
 
-This is a FastAPI chatbot project that combines OpenSearch-based RAG with LangChain. It uses the `Qwen2.5-7B-Instruct` model through the Hugging Face API and is designed to work with external search results and uploaded files.
+This is a FastAPI chat and RAG project that combines LangChain, the Hugging Face Inference API, and OpenSearch. It supports local attachment storage, vector search, and optional external search integration. The default model is `Qwen2.5-7B-Instruct`.
 
 Key points:
 
-- FastAPI-based REST API with a simple web UI
-- Model orchestration with LangChain
-- Hugging Face API integration and model override support
-- OpenSearch-based vector search and attachment search support
-- Docker Compose support for running `app`, `minio`, and `opensearch`
+- FastAPI-based REST API with a browser UI and CLI client
+- Support for both regular responses and SSE streaming through `POST /chat` and `POST /chat/stream`
+- Upload, list, and delete files through the `/files` API, and use them in RAG retrieval
+- LangChain-based prompt orchestration with Hugging Face model override support
+- Docker Compose support for running the app, MinIO, OpenSearch, and LangFuse together
 
 ### 2. Whisper-based STT meeting notes and business system integration
 
