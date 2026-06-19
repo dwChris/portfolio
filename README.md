@@ -10,7 +10,7 @@
 
 ## Projects
 
-### 1. LangGraph + LangChain + OpenSearch 기반 LLM 챗봇 및 LangFuse를 통한 모니터링
+### 1. LangGraph + LangChain + OpenSearch 기반 LLM 챗봇(RAG) 및 LangFuse를 통한 모니터링
 
 GitHub: https://github.com/dwChris/LangGraph-LangChain-LangFuse-OpenSearch-Extention
 
