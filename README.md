@@ -11,6 +11,9 @@
 ## Projects
 
 ### 1. LangGraph + LangChain + OpenSearch 기반 LLM 챗봇(RAG) 및 LangFuse를 통한 모니터링
+### CoT(Chain of Thought)를 추가하여 모델의 추론 상태 파악
+### MCP Client Simple module을 추가하여 CoT 후 LangChain에서 선택 가능하도록 구조 조정
+### MCP Sever 추가 : Python 기반 matplot 을 활용한 DF(DataFramework)의 시각화 이미지 제공 -> MINIO 활용
 
 GitHub: https://github.com/dwChris/LangGraph-LangChain-LangFuse-OpenSearch-Extention
 
